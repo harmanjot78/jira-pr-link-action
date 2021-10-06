@@ -22,7 +22,7 @@ export function validate(event: PullRequestEvent, options: Options): boolean {
     }
   }
 
-  if (event.pull_request.head.ref.match(re)) {
+  if (event.pull_request.title.match(re)) {
     return true
   }
 
